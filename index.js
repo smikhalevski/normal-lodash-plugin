@@ -4,7 +4,8 @@ const webpack = require('webpack');
 
 class NormalLodashPlugin extends webpack.NormalModuleReplacementPlugin {
 
-  constructor(basePath = __dirname) {
+  constructor(options = {}) {
+    const {basePath = path.dirname(module.parent.filename)} = options;
     const lodashDir = path.join(basePath, 'node_modules', 'lodash');
 
     if (!fs.existsSync(lodashDir)) {
