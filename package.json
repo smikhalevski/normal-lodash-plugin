@@ -1,0 +1,29 @@
+{
+  "name": "normal-lodash-plugin",
+  "version": "0.0.1",
+  "description": "Webpack plugin that squashes multiple versions of lodash",
+  "author": "Savva Mikhalevski",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smikhalevski/normal-lodash-plugin.git"
+  },
+  "homepage": "https://github.com/smikhalevski/normal-lodash-plugin",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "lodash",
+    "normal",
+    "webpack",
+    "plugin"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^22.4.2",
+    "webpack": "^3.11.0"
+  }
+}
